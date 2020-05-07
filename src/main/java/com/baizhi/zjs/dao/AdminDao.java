@@ -12,5 +12,5 @@ public void gg();
 
     public void iqi();
 
-    public void kkkk();
+    public void kkok();
 }

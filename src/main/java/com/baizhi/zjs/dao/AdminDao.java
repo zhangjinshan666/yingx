@@ -8,4 +8,5 @@ public void bb();
 public void cc();
 public void dd();
 public void ff();
+public void gg();
 }

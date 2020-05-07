@@ -9,4 +9,6 @@ public void ff();
 public void gg();
 
     public void hh();
+
+    public void ii();
 }

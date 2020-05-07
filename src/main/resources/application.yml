@@ -1,0 +1,39 @@
+server:
+  context-path: /springboot
+  #jsp页面的热部署
+  jsp-servlet:
+    init-parameters:
+      development: true
+  port: 8989
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/ems?characterEncoding=UTF-8
+    username: root
+    password: root
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /
+    #入参
+    date-format: yyyy-MM-dd
+  aop:
+    proxy-target-class: true
+  # 文件上传大小的控制
+  http:
+  profiles:
+    active: product
+  #出参的数据格式
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+  mybatis:
+  type-aliases-package: com.baizhi.springbootaop.entity
+  mapper-locations: classpath:com/baizhi/mapper/*.xml
+
+logging:
+  level:
+    root: info
+    com.baizhi.springbootmybatisjsp.dao: debug
+  file: springboot.log

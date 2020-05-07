@@ -11,4 +11,6 @@ public void gg();
     public void hh();
 
     public void iqi();
+
+    public void kk();
 }
